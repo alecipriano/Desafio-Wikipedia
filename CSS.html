@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>   
+        <div class="logo">
+            <img src="assets/images/logo.png" width="200" alt="logotipo da pagina"/>
+            <p>Desafio Wikipedia</p>
+        </div>
+    </header>
+
+    <div class="bar"></div>
+
+    <main class="content">
+        <nav class="sidebar">
+            <h2>Título</h2>
+            <ul>
+                <li><a href="./index.html">Pagina Principal</a></li>
+                <li><a href="./Html.html">HTML</a></li>
+                <li><a href="./CSS.html">CSS</a></li>
+                <li><a href="./JavaScript.html">JavaScript</a></li>
+            </ul>
+        </nav>
+
+        <div class="main">
+            <h1>CSS</h1>
+
+            <figure>
+             <img src="assets/images/CSS3_logo.png" width="200" alt="Logotipo do CSS"/>
+            </figure>
+
+            <h2 id="Definição">Definição</h2>
+            <p>Cascading Style Sheets (abreviado <strong>CSS</strong>) é um mecanismo para adicionar estilos (cores, fontes, espaçamento, etc.) a uma página web, aplicado diretamente nas tags <a href="./Html.html">HTML</a> ou ficar contido dentro das tags:  <code>&lt;style&gt;</code>.</p>
+            
+            <p>Também é possível, adicionar estilos adicionando um <span title="Uma hiperligação, um liame/ligame, ou simplesmente uma ligação (em inglês, hyperlink e link), é uma referência dentro de um documento em hipertexto a outras partes desse documento ou a outro documento."><i>link</i></span> para um arquivo <strong>CSS</strong> que contém os estilos. Assim, quando se quiser alterar a aparência dos documentos vinculados a este arquivo <strong>CSS</strong>, basta modifica-lo.</p>
+            
+            <h2 id="Sintaxe">Sintaxe</h2>
+            <p>
+                <strong>CSS</strong> tem uma sintaxe simples, e utiliza uma série de palavras em inglês para especificar os nomes de diferentes propriedade de estilo de uma página.
+            </p>
+            <p>
+                Uma instrução <strong>CSS</strong> consiste em um seletor e um bloco de declaração. Cada declaração contém uma propriedade e um valor, separados por dois pontos (:). Cada declaração é separada por ponto e vírgula (;)
+            </p>
+            <p>
+                Em <strong>CSS</strong>, seletores são usados para declarar a quais elementos de marcação um estilo se aplica, uma espécie de expressão correspondente. Os seletores podem ser aplicados a todos os elementos de um tipo específico, ou apenas aqueles elementos que correspondam a um determinado atributo; elementos podem ser combinados, dependendo de como eles são colocados em relação uns aos outros no código de marcação, ou como eles estão aninhados dentro do objeto de documento modelo.
+            </p>
+
+            <h2 id="Seletores">Seletores</h2>
+            <p>
+                Definição de estilo é um conjunto de propriedades visuais para um elemento, o <strong>CSS</strong>  define regras que fazem as definições de estilo casarem com um elemento ou grupo de elemento, o documento pode conter um bloco de <strong>CSS</strong>  num elemento style ou usando o elemento link apontando para um arquivo externo que contenha o bloco <strong>CSS</strong> .
+            </p>
+            <p>
+                Para uso com o <strong>CSS</strong>, foi criado o atributo class que todo elemento pode conter.
+            </p>
+            <p>
+                As regras de casamento para o <strong>CSS</strong> são chamadas de seletores, uma definição de estilo pode ser casada com um seletor ou um grupo de seletores separados por vírgula, um seletor pode casar um elemento por:
+            </p>
+
+            <h2 id="Tabela">Tabela de Seletores <strong>CSS</strong></h2>
+
+            <table summary="Esta tabela informa alguns elementos para utlização do <strong>CSS</strong>">
+            <tr>
+                <th>Selector</th>
+                <th>Descrição</th>
+                <th>Exemplo</th>
+            </tr>
+            <tr>
+                <td>elemento_name { ... }</td>
+                <td>Aplica um estilo a todos os elementos do tipo especificado.</td>
+                <td>p { color: blue; }</td>
+            </tr>
+            <tr>
+                <td>.class_name { ... }</td>
+                <td>Aplica um estilo a todos os elementos com a classe especificada.</td>
+                <td>.destaque { background-color: yellow; }</td>
+            </tr>
+            <tr>
+                <td>#id_of_element { ... }</td>
+                <td>Aplica um estilo a um elemento com o ID especificado.</td>
+                <td>#cabecalho { font-size: 24px; }</td>
+            </tr>
+            <tr>
+                <td>elemento_name.class_name { ... }</td>
+                <td>Combina um nome de elemento e uma classe.</td>
+                <td>div.centro { text-align: center; }</td>
+            </tr>
+            <tr>
+                <td>elemento_name_1, elemento_name_2, .class_name { ... }</td>
+                <td>Combina vários elementos ou classes.</td>
+                <td>h1, h2, .titulo { font-family: Arial; }</td>
+            </tr>
+            </table>
+
+            <p>
+                Sua necessidade adveio do fato do <a href="./Html.html">HTML</a>, aos poucos, ter deixado de ser usado apenas para criação de conteúdo na web, e portanto havia uma mistura de formatação e conteúdo textual dentro do código de uma mesma página. Contudo, na criação de um grande portal, fica quase impossível manter uma identidade visual, bem como a produtividade do desenvolvedor. É nesse ponto que entra o <strong>CSS</strong>.
+            </p>
+
+            <h2>Versões do <strong>CSS</strong></h2>
+
+        <table summary="Esta tabela informa as versões do CSS até a presente data" id="Versões">
+        <tr>
+            <th>Versão</th>
+            <th>Ano de Lançamento</th>
+            <th>Principais Características</th>
+        </tr>
+        <tr>
+            <td>CSS1</td>
+            <td>1996</td>
+            <td>Base para estilos, seletores básicos, fontes e cores.</td>
+        </tr>
+        <tr>
+            <td>CSS2</td>
+            <td>1998</td>
+            <td>Posicionamento, tabelas, layouts mais complexos.</td>
+        </tr>
+        <tr>
+            <td>CSS2.1</td>
+            <td>2004</td>
+            <td>Correções e clarificações do CSS2.</td>
+        </tr>
+        <tr>
+            <td>CSS3</td>
+            <td>2012 (em constante evolução)</td>
+            <td>Seletores avançados, modelos de caixa, animações, transformações, etc.</td>
+        </tr>
+        </table>
+
+
+        </div>
+
+        <nav class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#Definição">Definição</a></li>
+                <li><a href="#Sintaxe">Sintaxe</a></li>
+                <li><a href="#Seletores">Seletores</a></li>
+                <li><a href="#Tabela">Tabela de Seletores</a></li>
+                <li><a href="#Versões">Versões do CSS</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+</body>
+</html>
